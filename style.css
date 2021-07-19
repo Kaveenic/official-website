@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
 
 *{
 	margin: 0px;
@@ -204,8 +209,11 @@ nav ul li img{
 
 /*=== BAGIAN JUMBTRON ===*/
 .jumbotron{
+	background: url(img/background-5.png);
+	background-size: cover;
+	background-repeat: no-repeat;
 	/*background: rgba(98,75,245,1);*/
-	background: radial-gradient(circle, rgba(74,200,195,1) 3%, rgba(98,75,245,1) 100%);
+	/*background: radial-gradient(circle, rgba(74,200,195,1) 3%, rgba(98,75,245,1) 100%);*/
 	/*background: linear-gradient(45deg, rgba(255,222,255,1) 0%, rgba(98,75,245,1) 50%, rgba(12,41,72,1) 100%);*/
 	/*background: linear-gradient(45deg, rgba(12,41,72,1) 0%, rgba(98,75,245,1) 50%, rgba(255,222,255,1) 100%);*/
 	/*background: linear-gradient(45deg, rgba(76,104,215,1) 0%, rgba(205,72,107,1) 50%, rgba(252,204,99,1) 100%);*/
@@ -217,18 +225,20 @@ nav ul li img{
 	overflow: hidden;
 }
 .jumbotron img.logo{
-	max-width: 25rem;
-	transform: translateX(-300px);
+	position: absolute;
+	max-width: 28rem;
 	-webkit-filter: drop-shadow(20px 5px 20px rgba(0,0,0,0.1));
 	z-index: 1;
 }
 .jumbotron h2{
 	position: absolute;
+	/*margin-right: -100px;*/
 	/*right: 0px*/
 	/*font-family: "Azonix", sans-serif;*/
 	text-transform: uppercase;
 	font-weight: 800;
-	font-size: 8em;
+	font-size: 9em;
+	font-family: "Azonix", sans-serif;
 }
 .jumbotron h2.text{
 	background: -webkit-linear-gradient(90deg, rgba(3,169,250,1) 0%, rgba(135,251,203,1) 100%);
@@ -245,9 +255,9 @@ nav ul li img{
 .jumbotron h2.other{
 	color: transparent;
 	/*-webkit-text-stroke: 2px #ff0026;*/
-	-webkit-text-stroke: 2px #fff;
+	-webkit-text-stroke: 0.1px #fcba03;
 	z-index: 3;
-	transform: translate(-5px, -5px);
+	transform: translate(-3px, -3px);
 	/*text-shadow: 50px 50px 0px rgba(0,0,0,0.5);*/
 }
 .jumbotron .content-2{
@@ -272,40 +282,11 @@ nav ul li img{
 	border-radius: 50%;
 	background: rgba(255,255,255,0.5);
 }
-.jumbotron p{
-	position: absolute;
-	bottom: 150px;
-	right: 400px;
-	font-size: 1em;
-	text-transform: uppercase;
-	font-weight: 500;
-	color: #fff;
-	font-family: 'Kanit', sans-serif;
-	text-shadow: 5px 5px 20px rgba(0,0,0,0.1);
-	z-index: 5;
-	text-align: center;
-}
-.jumbotron p span{
-	font-family: 'Kanit', sans-serif;
-	font-size: 1.3em;
-}
-.jumbotron .kentut{
-	position: absolute;
-	top: 50px;
-	right: 50px;
-}
-.jumbotron .kentut h1.text{
-	margin-top: -30px;
-	color: transparent;
-	-webkit-text-stroke: 2px rgba(0,0,0,0.1);
-	font-size: 10em;
-	/*text-shadow: 0px 0px 0px rgba(255,255,255,1);*/
-}
 
 /*--- RESPONSIVE ---*/
 @media screen and (max-width: 576px){
 	.jumbotron h2{
-		font-size: 4em;
+		font-size: 3em;
 	}
 	.jumbotron .content-2{
 		position: absolute;
@@ -320,23 +301,16 @@ nav ul li img{
 	.jumbotron{
 		height: 500px;
 	}
-	.jumbotron .kentut{
-		top: 0px;
-		right: 0px;
-	}
 	.jumbotron img.logo{
 		max-width: 15rem;
-		transform: translateX(-50px);
-	}
-	.jumbotron p{
-		font-size: 1em;
-		right: inherit;
-		bottom: 30px;
+		left: 0px;
 	}
 }
 
 /*=== BAGIAN ABOUT ===*/
 .about{
+	/*background: url(img/background-4.png);
+	background-size: cover;*/
 	padding: 100px 0px;
 	display: flex;
 	justify-content: center;
@@ -348,11 +322,13 @@ nav ul li img{
 	/*background: linear-gradient(45deg, #5b78e8 0%, #de5f80 50%, #f5d184 100%);*/
 	background: linear-gradient(45deg, rgba(76,104,215,1) 0%, rgba(205,72,107,1) 50%, rgba(252,204,99,1) 100%);
 }
+.about h2 span.main-1{
+}
 .about h2{
 	font-size: 4em;
 	text-align: center;
 	font-weight: 800;
-	text-shadow: 1px 1px 0px rgba(225,225,225,0.65),
+	/*text-shadow: 1px 1px 0px rgba(225,225,225,0.65),
 	2px 2px 0px rgba(225,225,225,0.65),
 	3px 3px 0px rgba(225,225,225,0.65),
 	4px 4px 0px rgba(225,225,225,0.65),
@@ -360,7 +336,11 @@ nav ul li img{
 	6px 6px 0px rgba(225,225,225,0.65),
 	7px 7px 0px rgba(225,225,225,0.65),
 	8px 8px 0px rgba(225,225,225,0.65),
-	15px 15px 0px rgba(0,0,0,0.05);
+	15px 15px 0px rgba(0,0,0,0.05);*/
+	font-family: "Azonix", sans-serif;
+}
+.about h2 span.main{
+	font-family: "Azonix", sans-serif;
 }
 .about .content{
 	position: relative;
@@ -398,7 +378,7 @@ nav ul li img{
 /*=== BAGIAN LAUNCHING ===*/
 .launching{
 	overflow: hidden;
-	padding: 100px 0px;
+	padding: 150px 0px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -416,6 +396,9 @@ nav ul li img{
 	font-weight: 800;
 	color: #fff;
 	font-size: 4em;
+}
+.launching h1 span{
+	font-family: "Azonix", sans-serif;
 }
 .launching p{
 	color: #fff;
@@ -484,4 +467,174 @@ nav ul li img{
 	.launching .product .price{
 
 	}
+}
+
+/*=== BAGIAN SLIDE ===*/
+.seputar{
+	background: url(img/background-3.png);
+	background-size: cover;
+	overflow: hidden;
+	/*height: 500px;*/
+}
+.seputar .yahalo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.seputar .halo h1.text1{
+	position: absolute;
+	left: -90px;
+	font-size: 5em;
+	font-weight: 800;
+	transform: rotate(-90deg);
+	letter-spacing: 5px;
+	text-shadow: 15px 0px 15px rgba(0,0,0,0.1);
+	color: #fcba03;
+}
+.seputar .halo h1.text2{
+	position: absolute;
+	right: -75px;
+	font-size: 5em;
+	font-weight: 800;
+	transform: rotate(90deg);
+	letter-spacing: 5px;
+	text-shadow: 15px 0px 15px rgba(0,0,0,0.1);
+}
+.seputar .halo{
+	position: relative;
+}
+.seputar .halo .content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.seputar .halo .kotak{
+	background: url(img/mobile-wallpaper.jpg);
+	background-size: cover;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width: 250px;
+	height: 450px;
+	border-radius: 25px;
+	box-shadow: 0px 0px 25px rgba(0,0,0,0.5),
+				inset 0px 0px 15px rgba(0,0,0,0.5);
+	border: 5px solid black;
+}
+.seputar .halo .kotak::before{
+	content: '';
+	position: absolute;
+	top: 0px;
+	background: #000;
+	width: 130px;
+	height: 15px;
+	border-radius: 10px 10px 50px 50px;
+	/*border-radius: 50px;*/
+}
+/*.seputar .halo .kotak::after{
+	content: '';
+	position: absolute;
+	top: 5px;
+	width: 60px;
+	height: 7px;
+	background: #0a0a0a;
+	border-radius: 50px;
+	z-index: 1;
+}*/
+.seputar .halo .kotak h1{
+	margin-top: 50px;
+	color: #fff;
+	font-weight: 200;
+	font-family: 'Quicksand', sans-serif;
+	letter-spacing: 3px;
+}
+
+/*--- BAGIAN SOCIAL MEDIA ---*/
+.seputar .halo .kotak img{
+	position: absolute;
+	width: 50px;
+	-webkit-filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.5));
+	z-index: 2;
+}
+.seputar .halo .kotak img.instagram{
+	top: 50px;
+	left: -20px;
+	transform: rotate(20deg);
+}
+.seputar .halo .kotak img.tiktok{
+	top: 50px;
+	right: 0px;
+	width: 70px;
+	transform: rotate(-10deg);
+	z-index: 0;
+}
+.seputar .halo .kotak img.email{
+	top: 190px;
+	left: 0px;
+	width: 80px;
+	transform: rotate(-5deg);
+	z-index: 0;
+}
+.seputar .halo .kotak img.facebook{
+	bottom: 20px;
+	right: -20px;
+	width: 100px;
+	transform: rotate(25deg);
+}
+.seputar .halo .kotak img.whatsapp{
+	bottom: 20px;
+	left: -15px;
+	transform: rotate(-15deg);
+}
+
+.seputar .halo img.product{
+	position: relative;
+	max-width: 50rem;
+	-webkit-filter: drop-shadow(15px 15px 20px rgba(0,0,0,0.7));
+	z-index: 1;
+}
+.seputar .carousel .carousel-inner .carousel-item{
+	height: 300px;
+}
+.seputar .carousel .carousel-inner .carousel-item h1{
+	font-weight: 800;
+	font-size: 5em;
+}
+.seputar .carousel .carousel-inner .carousel-item p{
+	margin-top: 20px;
+	font-weight: 500;
+	font-size: 1.3em;
+}
+.seputar .carousel .carousel-indicators{
+	margin-bottom: -50px !important;
+}
+.seputar .carousel .carousel-indicators button{
+	margin: 0px 15px;
+	width: 17px !important;
+	height: 17px !important;
+	border-radius: 50% !important;
+}
+
+/*--- BAGIAN ORDER ---*/
+.seputar .order{
+	padding: 50px 0px;
+	height: 500px;
+}
+.seputar .order h1{
+	font-size: 4em;
+	font-weight: 800;
+	text-align: center;
+}
+.seputar .order .row{
+	margin-top: 50px;
+}
+.seputar .order .main{
+	display: flex;
+}
+.seputar .order .card{
+	width: 400px;
+	height: 200px;
+	margin: 10px;
+	border-radius: 15px;
+	border: none;
 }
