@@ -377,8 +377,121 @@ nav ul li img{
 
 /*=== BAGIAN LAUNCHING ===*/
 .launching{
+	position: relative;
 	overflow: hidden;
-	padding: 150px 0px;
+}
+.launching img.patren{
+	filter: opacity(0.3);
+	position: absolute;
+	top: 50px;
+	left: -300px;
+	transform: rotate(90deg);
+	max-width: 700px;
+}
+
+/*--- BAGIAN ABOUT US ---*/
+.launching .aboutUs{
+	padding-bottom: 100px;
+}
+.launching .aboutUs .row h1{
+	position: relative;
+	margin-top: 50px;
+	text-align: right;
+	font-weight: 800;
+	color: #fff;
+	font-size: 4em;
+	z-index: 5;
+}
+.launching .aboutUs .row h1 span{
+	font-family: "Azonix", sans-serif;
+}
+.launching .aboutUs .row p{
+	position: relative;
+	text-align: right;
+	color: #fff;
+	z-index: 5;
+}
+.launching .aboutUs .swiper-container {
+	position: relative;
+	width: 350px;
+	height: 350px;
+}
+.launching .aboutUs .swiper-slide {
+	position: relative;
+	padding: 15px;
+	/*background: url(img/background-6.png);*/
+	background-position: center;
+	background-size: cover;
+	background: #fcba03;
+}
+.launching .aboutUs .swiper-slide h2{
+	font-size: 2em;
+	color: #171717;
+	font-weight: 800;
+	text-align: center;
+}
+.launching .aboutUs .swiper-slide ul{
+}
+.launching .aboutUs .swiper-slide ul li{
+	color: #171717;
+}
+.launching .aboutUs .swiper-slide .kosong{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.launching .aboutUs .swiper-slide .kosong p{
+	position: absolute;
+	bottom: -15px;
+	width: 100px;
+	height: 30px;
+	border-radius: 50px 50px 0px 0px;
+	background: rgba(255,255,255,0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+	font-weight: 800;
+}
+.launching .aboutUs .swiper-slide img.illustration{
+	width: 250px;
+	position: absolute;
+	bottom: -10px;
+	right: -100px;
+	transform: rotate(10deg);
+	-webkit-filter: drop-shadow(-5px 10px 20px rgba(0,0,0,0.5));
+}
+.launching .aboutUs .swiper-slide img.illustration-2{
+	transform: rotate(0deg);
+	bottom: -30px;
+	right: -120px;
+}
+.launching .aboutUs .swiper-slide img.illustration-3{
+	transform: rotate(0deg);
+	bottom: -30px;
+	right: -150px;
+}
+.launching .aboutUs .swiper-slide img.asset{
+	width: 185px;
+	position: absolute;
+	-webkit-filter: drop-shadow(5px 15px 20px rgba(0,0,0,0.5));
+}
+.launching .aboutUs .swiper-slide img.asset-1{
+	transform: rotate(-20deg);
+	bottom: -20px;
+	left: -50px;
+}
+.launching .aboutUs .swiper-slide img.asset-2{
+	bottom: -30px;
+	left: -30px;
+}
+.launching .aboutUs .swiper-slide img.asset-3{
+	bottom: -70px;
+	left: -60px;
+}
+.launching{
+	overflow: hidden;
+	padding: 100px 0px 150px 0px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -387,20 +500,22 @@ nav ul li img{
 	/*background: linear-gradient(90deg, rgba(255,166,0,1) 6%, rgba(255,231,0,1) 87%);*/
 }
 .launching img.image{
+	position: relative;
 	max-width: 35rem;
 	border-radius: 15px;
 	box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
+	z-index: 5;
 }
-.launching h1{
+.launching .content-areas h1{
 	margin-top: 30px;
 	font-weight: 800;
 	color: #fff;
 	font-size: 4em;
 }
-.launching h1 span{
+.launching .content-areas h1 span{
 	font-family: "Azonix", sans-serif;
 }
-.launching p{
+.launching .content-areas p{
 	color: #fff;
 }
 .launching .product{
@@ -430,10 +545,12 @@ nav ul li img{
 .launching .product .text1{
 	top: 0px;
 	left: 100px;
+	color: #fff;
 }
 .launching .product .text2{
 	bottom: -30px;
 	right: 100px;
+	color: #fff;
 }
 .launching .product .price{
 	position: absolute;
@@ -471,10 +588,19 @@ nav ul li img{
 
 /*=== BAGIAN SLIDE ===*/
 .seputar{
+	position: relative;
+	padding: 50px 0px;
 	background: url(img/background-3.png);
 	background-size: cover;
 	overflow: hidden;
 	/*height: 500px;*/
+}
+.seputar img.banner{
+	position: absolute;
+	bottom: -10px;
+	left: 0px;
+	filter: opacity(0.5);
+	transform: rotate(-5deg);
 }
 .seputar .yahalo{
 	display: flex;
@@ -529,18 +655,7 @@ nav ul li img{
 	width: 130px;
 	height: 15px;
 	border-radius: 10px 10px 50px 50px;
-	/*border-radius: 50px;*/
 }
-/*.seputar .halo .kotak::after{
-	content: '';
-	position: absolute;
-	top: 5px;
-	width: 60px;
-	height: 7px;
-	background: #0a0a0a;
-	border-radius: 50px;
-	z-index: 1;
-}*/
 .seputar .halo .kotak h1{
 	margin-top: 50px;
 	color: #fff;
@@ -617,24 +732,197 @@ nav ul li img{
 
 /*--- BAGIAN ORDER ---*/
 .seputar .order{
+	position: relative;
 	padding: 50px 0px;
-	height: 500px;
+	/*height: 500px;*/
+}
+.seputar .order .bungkusan{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 .seputar .order h1{
 	font-size: 4em;
 	font-weight: 800;
 	text-align: center;
+	text-shadow: 0px 10px 15px rgba(0,0,0,0.3);
 }
-.seputar .order .row{
-	margin-top: 50px;
-}
-.seputar .order .main{
-	display: flex;
+.seputar .order p.text{
+	text-align: center;
 }
 .seputar .order .card{
-	width: 400px;
-	height: 200px;
+	position: relative;
+	background: transparent;
+	width: 300px;
+	height: 300px;
 	margin: 10px;
-	border-radius: 15px;
+	border-radius: 10px;
 	border: none;
+	perspective: 1000px;
+	z-index: 1;
+}
+.seputar .order .card .card-inner{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+	/*background: url(img/background-6.png);
+	background-position: center;
+	background-size: cover;*/
+	/*background: #fcba03;*/
+	box-shadow: 0px 15px 20px rgba(0,0,0,0.5);
+	border-radius: 10px;
+	/*background: url(img/background-2.png);
+	background-size: cover;
+	background-position: center;*/
+	background: #ededed;
+	/*background: #fcba03;*/
+}
+.seputar .order .card .card-inner .bungkus{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 1;
+	visibility: visible;
+	transition: 1s;
+}
+.seputar .order .card .card-inner .card-front{
+	position: relative;
+}
+.seputar .order .card .card-inner .card-front .title,
+.seputar .order .card .card-inner .card-back .title{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: -28px;
+	border-radius: 10px 10px 0px 0px;
+	/*border-radius: 50px 50px 0px 0px;*/
+	width: 200px;
+	height: 30px;
+	font-weight: 800;
+	background: #ededed;
+	/*background: url(img/background-2.png);
+	background-size: cover;
+	background-position: center;*/
+}
+.seputar .order .card .card-inner .card-front img.money{
+	width: 185px;
+	position: absolute;
+	bottom: -30px;
+	left: -90px;
+	-webkit-filter: drop-shadow(5px 15px 20px rgba(0,0,0,0.5));
+}
+.seputar .order .card .card-inner .card-front img.logo{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	width: 130px;
+	-webkit-filter: drop-shadow(-5px 10px 20px rgba(0,0,0,0.5));
+	/*filter: opacity(0.5);*/
+}
+.seputar .order .card .card-inner .card-front img.tokopedia{
+	top: 30px !important;
+	left: 40px !important;
+	width: 150px;
+}
+.seputar .order .card .card-inner .card-front img.real{
+	left: -60px !important;
+	bottom: -55px !important;
+}
+.seputar .order .card .card-inner .card-front img.illustration{
+	position: absolute;
+	bottom: 30px;
+	right: -20px;
+	width: 230px;
+	-webkit-filter: drop-shadow(-5px 10px 20px rgba(0,0,0,0.5));
+}
+.seputar .order .card .card-inner .card-front ion-icon{
+	color: #000;
+	/*background: #fff;*/
+	font-size: 1.3em;
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+}
+.seputar .order .card:hover .card-inner{
+	transform: rotateY(180deg);
+}
+.seputar .order .card .card-inner:hover .card-front .bungkus{
+	visibility: hidden;
+	opacity: 0;
+}
+.seputar .order .card .card-inner .card-front, .card-back{
+	position: absolute;
+  	width: 100%;
+  	height: 100%;
+  	-webkit-backface-visibility: hidden; /* Safari */
+  	backface-visibility: hidden;
+}
+.seputar .order .card .card-inner .card-back{
+	padding: 15px;
+	transform: rotateY(180deg);
+	overflow-y: scroll;
+}
+.seputar .order .card .card-inner .card-back h6{
+	text-align: left;
+	font-weight: 800;
+	font-size: 1em;
+}
+.seputar .order .card .card-inner .card-back p{
+	text-align: left;
+	font-size: 0.8em;
+	font-weight: 800;
+	margin-top: -10px;
+	margin-left: 5px;
+}
+.seputar .order .card::before{
+	content: '';
+	position: absolute;
+	bottom: -70px;
+	width: 100%;
+	height: 60px;
+	background: radial-gradient(rgba(0,0,0,0.11),transparent,transparent);
+	border-radius: 50%;
+	transition: 0.5s;
+}
+
+/*=== BAGIAN TERAKHIR ===*/
+.terakhir{
+	position: relative;
+	background: url(img/thogether.jpeg);
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 400px;
+	/*filter: blur(5px);*/
+}
+.terakhir p{
+	text-align: center;
+}
+/*.terakhir::before{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: rgba(0,0,0,0.3);
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}*/
+
+/*=== Bagian Scrollbar ===*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);     
+    background: #666;    
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #232323;
 }
