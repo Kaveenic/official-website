@@ -325,7 +325,14 @@ nav ul li img{
 	top: 50px;
 	left: -300px;
 	transform: rotate(90deg);
-	max-width: 700px;
+	max-width: 50rem;
+}
+/*--- RESPONSIVE ---*/
+@media screen and (max-width: 576px){
+	.launching img.patren{
+		left: -100px;
+		width: 25rem;
+	}
 }
 
 /*--- BAGIAN ABOUT US ---*/
@@ -547,14 +554,22 @@ nav ul li img{
 	}
 }
 
+.launching .byunkusan{
+	padding: 50px 0px 30px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .launching .product{
-	margin-top: 100px;
+	width: 68vw;
+	height: 25vw;
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .launching .product h2{
+	position: relative;
 	font-size: 16vw;
 	color: #fcba03;
 	font-weight: 800;
@@ -562,56 +577,48 @@ nav ul li img{
 .launching .product img{
 	position: absolute;
 	margin-bottom: -50px;
-	max-width: 45rem;
+	max-width: 43rem;
 	transform: rotate(-10deg);
 	-webkit-filter: drop-shadow(0px 5px 20px rgba(0,0,0,0.5));
 }
 .launching .product p{
 	position: absolute;
-	font-size: 2em;
+	font-size: 2.5vw;
 	font-weight: 800;
 }
 .launching .product .text1{
 	top: 0px;
-	left: 100px;
+	left: 0px;
 	color: #fff;
 }
 .launching .product .text2{
-	bottom: -30px;
-	right: 100px;
+	bottom: -10px;
+	right: 0px;
 	color: #fff;
 }
 .launching .product .price{
 	position: absolute;
 	top: 0px;
-	right: 100px;
-	width: 130px;
-	height: 40px;
+	right: 0px;
+	padding: 0.1vw 2vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background: #fcba03;
 	color: #000;
 	font-weight: 800;
-	border-radius: 10px;
-	font-size: 2em;
+	border-radius: 50px;
+	font-size: 2.5vw;
 }
-
 /*--- RESPONSIVE ---*/
+@media screen and (max-width: 768px){
+	.launching .byunkusan{
+		padding: 70px 0px 20px 0px;
+	}
+}
 @media screen and (max-width: 576px){
-	.launching .product p{
-		font-size: 1em;
-	}
-	.launching .product .text1{
-		top: -10px;
-		left: 60px;
-	}
-	.launching .product .text2{
-		bottom: -30px;
-		right: 50px;
-	}
-	.launching .product .price{
-
+	.launching .byunkusan{
+		padding: 20px 0px;
 	}
 }
 
