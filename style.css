@@ -226,7 +226,7 @@ nav ul li img{
 }
 .jumbotron img.logo{
 	position: absolute;
-	max-width: 28rem;
+	max-width: 25rem;
 	-webkit-filter: drop-shadow(20px 5px 20px rgba(0,0,0,0.1));
 	z-index: 1;
 }
@@ -307,78 +307,17 @@ nav ul li img{
 	}
 }
 
-/*=== BAGIAN ABOUT ===*/
-.about{
-	/*background: url(img/background-4.png);
-	background-size: cover;*/
-	padding: 100px 0px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	overflow: hidden;
-	/*background: linear-gradient(90deg, rgba(0,255,128,1) 6%, rgba(0,255,201,1) 87%);*/
-	/*background: linear-gradient(90deg, rgba(255,174,0,1) 6%, rgba(255,226,0,1) 87%);*/
-	/*background: linear-gradient(45deg, #5b78e8 0%, #de5f80 50%, #f5d184 100%);*/
-	background: linear-gradient(45deg, rgba(76,104,215,1) 0%, rgba(205,72,107,1) 50%, rgba(252,204,99,1) 100%);
-}
-.about h2 span.main-1{
-}
-.about h2{
-	font-size: 4em;
-	text-align: center;
-	font-weight: 800;
-	/*text-shadow: 1px 1px 0px rgba(225,225,225,0.65),
-	2px 2px 0px rgba(225,225,225,0.65),
-	3px 3px 0px rgba(225,225,225,0.65),
-	4px 4px 0px rgba(225,225,225,0.65),
-	5px 5px 0px rgba(225,225,225,0.65),
-	6px 6px 0px rgba(225,225,225,0.65),
-	7px 7px 0px rgba(225,225,225,0.65),
-	8px 8px 0px rgba(225,225,225,0.65),
-	15px 15px 0px rgba(0,0,0,0.05);*/
-	font-family: "Azonix", sans-serif;
-}
-.about h2 span.main{
-	font-family: "Azonix", sans-serif;
-}
-.about .content{
-	position: relative;
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	z-index: 1;
-}
-.about .card{
-	position: relative;
-	margin-top: 50px;
-	padding: 10px 15px;
-	width: 300px;
-	background: #5d3cab;
-	border: none;
-	border-radius: 15px;
-	/*backdrop-filter: blur(15px);*/
-	box-shadow: 0px 15px 30px rgba(0,0,0,0.3);
-	color: #fff;
-}
-.about .content .card h1{
-	text-align: center;
-	font-weight: 700;
-}
-.about .content .card p{
-	font-family: 'Kanit', sans-serif;
-}
-.about .content .card:nth-child(3) p{
-}
-.about img{
-	max-width: 50rem;
-	border-radius: 15px;
-}
-
 /*=== BAGIAN LAUNCHING ===*/
 .launching{
 	position: relative;
 	overflow: hidden;
+	padding: 100px 0px 150px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(img/background.png);
+	background-size: cover;
+	/*background: linear-gradient(90deg, rgba(255,166,0,1) 6%, rgba(255,231,0,1) 87%);*/
 }
 .launching img.patren{
 	filter: opacity(0.3);
@@ -429,8 +368,6 @@ nav ul li img{
 	color: #171717;
 	font-weight: 800;
 	text-align: center;
-}
-.launching .aboutUs .swiper-slide ul{
 }
 .launching .aboutUs .swiper-slide ul li{
 	color: #171717;
@@ -489,16 +426,66 @@ nav ul li img{
 	bottom: -70px;
 	left: -60px;
 }
-.launching{
-	overflow: hidden;
-	padding: 100px 0px 150px 0px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: url(img/background.png);
-	background-size: cover;
-	/*background: linear-gradient(90deg, rgba(255,166,0,1) 6%, rgba(255,231,0,1) 87%);*/
+/*--- RESPONSIVE ---*/
+@media screen and (max-width: 768px){
+	.launching .aboutUs .row h1{
+		font-size: 3.5em;
+	}
+	.launching .aboutUs .row p{
+		text-align: justify;
+		font-size: 0.85em;
+	}
+	.launching .aboutUs .swiper-container{
+		width: 320px;
+		height: 320px;
+	}
+	.launching .aboutUs .swiper-slide .kosong p{
+		font-size: 0.9em;
+	}
+	.launching .aboutUs .swiper-slide img.illustration{
+		width: 200px;
+		right: -90px !important;
+	}
+	.launching .aboutUs .swiper-slide img.asset{
+		width: 150px;
+	}
 }
+@media screen and (max-width: 576px){
+	.launching{
+		padding: 50px 0px;
+	}
+	.launching .aboutUs .row h1{
+		margin-top: 0px;
+		text-align: left;
+		font-size: 3.5em;
+	}
+	.launching .aboutUs .row p{
+		text-align: justify;
+		font-size: 0.8em;
+	}
+	.launching .aboutUs .swiper-container{
+		width: 250px;
+		height: 250px;
+	}
+	.launching .aboutUs .swiper-slide{
+		padding: 10px;
+	}
+	.launching .aboutUs .swiper-slide ul li{
+		font-size: 0.75em;
+	}
+	.launching .aboutUs .swiper-slide .kosong p{
+		height: 20px;
+		font-size: 0.8em;
+	}
+	.launching .aboutUs .swiper-slide img.illustration{
+		right: -85px !important;
+		width: 180px;
+	}
+	.launching .aboutUs .swiper-slide img.asset{
+		width: 120px;
+	}
+}
+
 .launching img.image{
 	position: relative;
 	max-width: 35rem;
@@ -506,11 +493,17 @@ nav ul li img{
 	box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
 	z-index: 5;
 }
+.launching .content-areas .yahalo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .launching .content-areas h1{
 	margin-top: 30px;
 	font-weight: 800;
 	color: #fff;
 	font-size: 4em;
+	width: 100%;
 }
 .launching .content-areas h1 span{
 	font-family: "Azonix", sans-serif;
@@ -518,6 +511,42 @@ nav ul li img{
 .launching .content-areas p{
 	color: #fff;
 }
+/*--- RESPONSIVE ---*/
+@media screen and (max-width: 768px){
+	.launching .content-areas .yahalo2{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.launching .content-areas h1{
+		text-align: center;
+		width: 75%;
+		font-size: 2em;
+	}
+	.launching .content-areas p{
+		width: 75%;
+		text-align: justify;
+		font-size: 0.8em;
+	}
+}
+@media screen and (max-width: 576px){
+	.launching .content-areas .yahalo2{
+		display: block;
+		justify-content: inherit;
+		align-items: inherit;
+		flex-direction: inherit;
+	}
+	.launching .content-areas h1{
+		width: 50%;
+		font-size: 3.5em;
+		text-align: left;
+	}
+	.launching .content-areas p{
+		width: inherit;
+	}
+}
+
 .launching .product{
 	margin-top: 100px;
 	position: relative;
@@ -592,6 +621,7 @@ nav ul li img{
 	padding: 50px 0px;
 	background: url(img/background-3.png);
 	background-size: cover;
+	background-position: center;
 	overflow: hidden;
 	/*height: 500px;*/
 }
