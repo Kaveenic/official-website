@@ -453,12 +453,19 @@ nav ul li img{
 		width: 150px;
 	}
 }
+@media screen and (max-width: 767px){
+	.launching .aboutUs .row h1{
+		margin-top: -20px;
+	}
+	.launching .aboutUs .row p{
+		text-align: right;
+	}
+}
 @media screen and (max-width: 576px){
 	.launching{
 		padding: 50px 0px;
 	}
 	.launching .aboutUs .row h1{
-		margin-top: 0px;
 		text-align: left;
 		font-size: 3.5em;
 	}
@@ -533,6 +540,11 @@ nav ul li img{
 		font-size: 0.8em;
 	}
 }
+@media screen and (max-width: 767px){
+	.launching .content-areas p{
+		font-size: 1em;
+	}
+}
 @media screen and (max-width: 576px){
 	.launching .content-areas .yahalo2{
 		display: block;
@@ -547,6 +559,7 @@ nav ul li img{
 	}
 	.launching .content-areas p{
 		width: inherit;
+		font-size: 0.8em;
 	}
 }
 
@@ -697,7 +710,7 @@ nav ul li img{
 /*--- RESPONSIVE ---*/
 @media screen and (max-width: 768px){
 	.seputar .halo{
-		padding: 100px 0px;
+		padding: 50px 0px;
 	}
 	.seputar .halo .kotak{
 		width: 180px;
@@ -714,6 +727,18 @@ nav ul li img{
 		font-size: 3.5em;
 	}
 }
+@media screen and (max-width: 767px){
+	.seputar .halo{
+		padding: 50px 0px 80px;
+	}
+	.seputar .halo .kotak{
+		width: 200px;
+	}
+	.seputar .halo h1.text1,
+	.seputar .halo h1.text2{
+		display: none;
+	}
+}
 @media screen and (max-width: 576px){
 	.seputar .halo{
 		padding: 30px 0px 50px;
@@ -727,10 +752,14 @@ nav ul li img{
 		width: 80px;
 	}
 	.seputar .halo h1.text1{
+		left: -83px;
 		font-size: 3.5em;
+		display: block;
 	}
 	.seputar .halo h1.text2{
+		right: -83px;
 		font-size: 3.5em;
+		display: block;
 	}
 	.seputar .halo .kotak img{
 		width: 20px;
@@ -821,6 +850,11 @@ nav ul li img{
 	border-radius: 50% !important;
 }
 /*--- RESPONSIVE ---*/
+@media screen and (max-width: 1024px){
+	.seputar .carousel .carousel-inner .carousel-item h1{
+		font-size: 4em;
+	}
+}
 @media screen and (max-width: 768px){
 	.seputar .carousel .carousel-inner .carousel-item h1{
 		font-size: 3em;
@@ -833,6 +867,20 @@ nav ul li img{
 	.seputar .carousel .carousel-indicators{
 		transform: translateY(-50px);
 	}
+}
+@media screen and (max-width: 767px){
+	.seputar .carousel .carousel-inner .carousel-item h1{
+		font-size: 2.5em;
+		text-transform: uppercase;
+	}
+	.seputar .carousel .carousel-inner .carousel-item p{
+		font-size: 0.8em;
+		text-align: left;
+	}
+	.seputar .carousel .carousel-indicators{
+		transform: translateY(-60px);
+	}
+
 }
 @media screen and (max-width: 576px){
 	.seputar .carousel .carousel-inner .carousel-item h1{
@@ -918,9 +966,22 @@ nav ul li img{
 }
 
 /*--- RESPONSIVE ---*/
-@media screen and (max-width: 768px){
-	.seputar .order .tiga{
+@media screen and (max-width: 1024px){
+	.seputar .order .card{
 		margin-top: 50px;
+	}
+}
+@media screen and (max-width: 768px){
+	.seputar .order .card{
+		margin-top: 50px;
+	}
+}
+@media screen and (max-width: 767px){
+	.seputar .order h1{
+		font-size: 2.5em;
+	}
+	.seputar .order p.text{
+		font-size: 0.8em;
 	}
 }
 @media screen and (max-width: 576px){
@@ -1076,7 +1137,6 @@ nav ul li img{
 	padding: 100px 0px;
 	position: relative;
 	width: 100%;
-	/*height: 300px;*/
 	background: url(img/background.png);
 	background-position: center;
 	background-size: cover;
@@ -1307,6 +1367,34 @@ nav ul li img{
 		top: -5px;
 	}
 }
+@media screen and (max-width: 767px){
+	.social #socialSwitch{
+		margin-bottom: 0px;
+		height: 150px;
+		border-radius: 150px;
+	}
+	.social #socialSwitch .indicator{
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+	}
+	.social #socialSwitch.active .indicator{
+		left: 150px;
+	}
+	.social .socialsMedia,
+	.social .payment{
+		flex-direction: row;
+		width: 200px;
+		height: 50px;
+		transition: 1s;
+	}
+	.social .row .yahalo{
+		padding: 80px 0px 0px;
+	}
+	.social .row .yaharo{
+		padding-top: 50px;
+	}
+}
 @media screen and (max-width: 576px){
 	.social #socialSwitch{
 		margin-bottom: 0px;
@@ -1330,6 +1418,9 @@ nav ul li img{
 		width: 200px;
 		height: 50px;
 		transition: 1s;
+	}
+	.social .row .yahalo{
+		padding: 0px;
 	}
 	.social .row .yaharo{
 		padding-top: 50px;
