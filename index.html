@@ -13,21 +13,22 @@
 	<link rel="stylesheet" href="style.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="http://fonts.cdnfonts.com/css/alphacentauri" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
-<body>
+<body id="home">
     <!-- BAGIAN NAVBAR -->
     <nav>
-    	<a href="" class="logo">Kaveenic</a>
+    	<a href="#home" class="logo">Kaveenic</a>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">FAQ</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#visit">Visit</a></li>
         </ul>
         <div class="menu">
             <input type="checkbox">
@@ -178,7 +179,7 @@
     <!-- BAGIAN JUMBOTRON AKHIR -->
 
     <!-- BAGIAN LAUNCHING -->
-    <section class="launching">
+    <section class="launching" id="about">
         <img src="img/patren.png" alt="Wave Patren" class="patren">
         <div class="container">
             <div class="aboutUs">
@@ -204,7 +205,7 @@
                                 <div class="swiper-slide">
                                     <h2>VISI</h2>
                                     <ul>
-                                        <li>menjadi perusahaan siswa yang dapat membantu mengatasi masalah kebersihan dengan teknologi ramah lingkungan, dan selalu mengutamakan kepuasan pelanggan</li>
+                                        <li>Menjadi perusahaan siswa yang dapat membantu mengatasi masalah kebersihan dengan teknologi ramah lingkungan, dan selalu mengutamakan kepuasan pelanggan.</li>
                                     </ul>
                                     <div class="kosong">
                                         <p class="page">2  -  3</p>
@@ -215,10 +216,10 @@
                                 <div class="swiper-slide">
                                     <h2>MISI</h2>
                                     <ul>
-                                        <li>Memproduksi teknologi yang ramah lingkungan</li>
-                                        <li>Menyediakan produk dengan kualitas dan kuantitas terbaik</li>
-                                        <li>Mengembangkan efektivitas produk untuk kepuasan pelanggan</li>
-                                        <li>Memahami keinginan dan kebutuhan pelanggan</li>
+                                        <li>Memproduksi teknologi yang ramah lingkungan.</li>
+                                        <li>Menyediakan produk dengan kualitas dan kuantitas terbaik.</li>
+                                        <li>Mengembangkan efektivitas produk untuk kepuasan pelanggan.</li>
+                                        <li>Memahami keinginan dan kebutuhan pelanggan.</li>
                                     </ul>
                                     <div class="kosong">
                                         <p class="page">3  -  3</p>
@@ -237,7 +238,7 @@
                 </div>
                 <div class="col-lg-6 yahalo2">
                     <h1 class="text"><span>KAVEENIC </span>LAUNCHING</h1>
-                    <p>Kaveenic Company merupakan perusahaan siswa yang mendukung kebersihan dan perkembangan teknologi, Kaveenic sendiri melakukan launching pada tanggal 29 April 2021 bersama produk inovatif yaitu Cleanio.</p>
+                    <p>Kaveenic melakukan launching pada tanggal 29 April 2021 dengan produk inovatif yaitu Cleanio. Launching Kaveenic dilakukan melalui virtual zoom meeting bersama Prestasi JUnior Indonesia <br>dan Citi Indonesia.</p>
                 </div>
             </div>
             <div class="byunkusan">
@@ -254,16 +255,15 @@
     <!-- BAGIAN LAUNCHING AKHIR -->
 
     <!-- BAGIAN SEPUTAR -->
-    <section class="seputar">
-        <!-- <img src="img/illustration-bg.png" alt="Illustration Background" class="banner img-fluid"> -->
+    <section class="seputar" id="product">
         <div class="container">
             <div class="row yahalo">
-                <div class="col-lg-6 halo">
+                <div class="col-lg-6 col-md-6 halo">
                     <div class="content">
                         <h1 class="text1">PRODUKSI</h1>
                         <h1 class="text2">INOVATIF</h1>
                         <div class="kotak">
-                            <h1>15 : 26</h1>
+                            <h1 class="clock">15 : 26</h1>
                             <img src="img/1.png" alt="Social Media" class="instagram">
                             <img src="img/2.png" alt="Social Media" class="tiktok">
                             <img src="img/3.png" alt="Social Media" class="email">
@@ -273,7 +273,7 @@
                         <img src="img/product-2.png" alt="" class="product">
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 ">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -292,8 +292,8 @@
                             <div class="carousel-item">
                                 <h1>Keunggulan</h1>
                                 <ul>
-                                    <li><p>Cleanio menggunakan mesin dinamo yang mengotomatiskan alat sehingga memudahkan dalam membersihkan</p></li>
-                                    <li><p>Sikat cleanio dapat dilepas pasang sehingga mudah dalam membersihkan alat</p></li>
+                                    <li><p>Cleanio menggunakan mesin dinamo yang mengotomatiskan alat sehingga memudahkan dalam membersihkan.</p></li>
+                                    <li><p>Sikat cleanio dapat dilepas pasang sehingga mudah dalam membersihkan alat.</p></li>
                                 </ul>
                             </div>
                         </div>
@@ -302,7 +302,7 @@
             </div>
         <div class="order">
             <h1>Cara Pemesanan</h1>
-            <p class="text">Jika anda berminat untuk mendapatkan Cleanio, anda bisa mengunjungi media yang kami sediakan.<br>Berikut media yang dapat anda kunjungi untuk pemesanan.</p>
+            <p class="text">Jika anda berminat untuk mendapatkan Cleanio, anda bisa mengunjungi media yang kami sediakan. <span>Berikut media yang dapat anda kunjungi untuk pemesanan.</span></p>
             <div class="bungkusan">
             <div class="card">
                 <div class="card-inner number-1">
@@ -310,18 +310,21 @@
                         <div class="bungkus">
                             <div class="title">TOKOPEDIA</div>
                         </div>
-                        <!-- <div class="ingfo">Rotate Me</div> -->
                         <img src="img/6.png" alt="Logo Image" class="logo tokopedia">
                         <img src="img/illustration-7.png" alt="Illustration Image" class="illustration illustration-1">
                         <img src="img/illustration-1-sec.png" alt="Illustration Image" class="money">
                         <ion-icon name="repeat-outline"></ion-icon>
                     </div>
                     <div class="card-back">
-                        <h6>Cara membeli Cleanio di Instagram</h6>
-                        <p style="margin-top: 20px;">1. Kunjungi akun Instagram kami di @kaveenic_id</p>
-                        <p>2. Hubungi kami langsung via DM</p>
-                        <p>3. Chat kami mengenai pembelian dan info lengkap yang ingin kamu ketahui, lalu isi form pembelian yang akan kami sediakan</p>
-                        <p>4. Dan lakukan transaksi pembayaran via transfer sebagai langkah terakhir kesepakatan pembelian</p>
+                        <h6>Cara membeli Cleanio melalui Tokopedia</h6>
+                        <ul>
+                            <li> Klik 'search' Di atas beranda,lalu ketik 'Cleanio'.</li>
+                            <li> Klik TAMBAH KERANJANG atau BELI LANGSUNG.</li>
+                            <li> Jika kamu pilih TAMBAH KERANJANG, selanjutnya pilih BELI untuk melanjutkan proses belanja.</li>
+                            <li> lalu ikuti prosedur pengisian yang ada dari alamat, metode pengiriman, serta pembayaran.</li>
+                            <li> Setelah selesai maka Cleanio mu akan segera diproses oleh tim kami.</li>
+                            <li> Pesan Sekarang juga!</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -331,7 +334,6 @@
                         <div class="bungkus">
                             <div class="title">INSTAGRAM</div>
                         </div>
-                        <!-- <div class="ingfo">Rotate Me</div> -->
                         <img src="img/1.png" alt="Logo Image" class="logo">
                         <img src="img/illustration-2.png" alt="Illustration Image" class="illustration illustration-2">
                         <img src="img/illustration-3-sec.png" alt="Illustration Image" class="money">
@@ -339,22 +341,23 @@
                     </div>
                     <div class="card-back">
                         <h6>Cara membeli Cleanio melalui Instagram</h6>
-                        <p style="margin-top: 20px;">1. Anda bisa kunjungi akun Instagram kami @kaveenic_id</p>
-                        <p>2. Hubungi kami langsung via DM mengenai pembelian dan info lengkap yang ingin kamu ketahui.</p>
-                        <p>3. Isi form pembelian dari kami untuk pendataan.</p>
-                        <p>4. Dan lakukan transaksi pembayaran melalui bank transfer (nomor rekening akan diberikan melalui chat) sebagai langkah kesepakatan akhir pembelian</p>
-                        <p>5. Selesai pembayaran maka Cleanio mu akan segera diperoses oleh tim kami</p>
-                        <p>Pesan Sekarang juga!</p>
+                        <ul>
+                            <li> Anda bisa kunjungi akun Instagram kami @kaveenic_id</li>
+                            <li> Hubungi kami langsung via DM mengenai pembelian dan info lengkap yang ingin kamu ketahui.</li>
+                            <li> Isi form pembelian dari kami untuk pendataan.</li>
+                            <li> Dan lakukan transaksi pembayaran melalui bank transfer (nomor rekening akan diberikan melalui chat) sebagai langkah kesepakatan akhir pembelian.</li>
+                            <li> Selesai pembayaran maka Cleanio mu akan segera diperoses oleh tim kami.</li>
+                            <li> Pesan Sekarang juga!</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card tiga">
                 <div class="card-inner number-3">
                     <div class="card-front">
                         <div class="bungkus">
                             <div class="title">WHATSAPP</div>
                         </div>
-                        <!-- <div class="ingfo">Rotate Me</div> -->
                         <img src="img/5.png" alt="Logo Image" class="logo">
                         <img src="img/illustration-8.png" alt="Illustration Image" class="illustration illustration-3">
                         <img src="img/illustration-2-sec.png" alt="Illustration Image" class="money real">
@@ -362,12 +365,14 @@
                     </div>
                     <div class="card-back">
                         <h6>Cara membeli Cleanio melalui Whatsapp</h6>
-                        <p style="margin-top: 20px;">1. Anda bisa chat kami dengan nomor xxxxx Atau klik "kontak" pada akun instagram kami @kaveenic_id</p>
-                        <p>2. Chat kami mengenai pembelian dan info lengkap yang ingin kamu ketahui.</p>
-                        <p>3. Isi form pembelian dari kami untuk pendataan.</p>
-                        <p>4. Dan lakukan transaksi pembayaran melalui bank transfer (nomor rekening akan diberikan melalui chat) sebagai langkah kesepakatan akhir pembelian</p>
-                        <p>5. Selesai pembayaran maka Cleanio mu akan segera diperoses oleh tim kami</p>
-                        <p>Pesan Sekarang juga!</p>
+                        <ul>
+                            <li> Anda bisa chat kami melalui nomor 081210822347 Atau klik "kontak" pada akun instagram kami @kaveenic_id</li>
+                            <li> Chat kami mengenai pembelian dan info lengkap yang ingin kamu ketahui.</li>
+                            <li> Isi form pembelian dari kami untuk pendataan.</li>
+                            <li> Dan lakukan transaksi pembayaran melalui bank transfer (nomor rekening akan diberikan melalui chat) sebagai langkah kesepakatan akhir pembelian.</li>
+                            <li> Selesai pembayaran maka Cleanio mu akan segera diperoses oleh tim kami.</li>
+                            <li> Pesan Sekarang juga!</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -377,11 +382,62 @@
     </section>
     <!-- BAGIAN SEPUTAR AKHIR -->
 
-    <!-- BAGIAN TERAKHIR -->
-    <!-- <section class="terakhir">
-        <p><i class='bx bxs-quote-left'></i>Jangan Lupa Subscrbe<i class='bx bxs-quote-right'></i></p>
-    </section> -->
-    <!-- BAGIAN TERAKHIR AKHIR -->
+    <!-- BAGIAN SOCIAL -->
+    <div class="social" id="visit">
+        <img src="img/patren.png" alt="Wave Patren" class="patren">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 yahalo">
+                    <div class="socialsMedia">
+                        <a target="_blank" href="https://www.instagram.com/kaveenic_id/"><img src="img/1.png" alt="Instagram" class="instagram"></a>
+                        <a target="_blank" href=""><img src="img/4.png" alt="Facebook" class="facebook"></a>
+                        <a target="_blank" href="https://www.tiktok.com/@kaveenic/"><img src="img/2.png" alt="TikTok" class="tiktok"></a>
+                    </div>
+                    <div class="payment">
+                        <a target="_blank" href="https://www.instagram.com/kaveenic_id/"><img src="img/1.png" alt="Instagram" class="instagram"></a>
+                        <a target="_blank" href="https://www.tokopedia.com/kaveenic/cleanio-sikat-elektrik"><img src="img/6.png" alt="Tokopedia" class="tokopedia"></a>
+                        <a target="_blank" href="https://wa.me/+6281210822347"><img src="img/5.png" alt="Whatsapp" class="whatsapp"></a>
+                    </div>
+                    <div id="socialSwitch">
+                        <i class="indicator"></i>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 yaharo">
+                    <div class="content-2">
+                        <div class="amazing">
+                            <div class="text textOne">SOSIAL MEDIA</div>
+                            <div class="text textTwo">PEMESANAN</div>
+                        </div>
+                        <h1 class="main">KAVEENIC</h1>
+                        <p>Anda dapat mangunjungi kami melewati platform yang kami punya untuk mengenal lebih lanjut tentang perusahaan kami, dan menjadi salah satu pendukung karya dan inovasi anak bangsa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BAGIAN SOCIAL AKHIR -->
+
+    <!-- BAGIAN FOOTER -->
+    <!-- <footer>
+        <div class="content1">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">Visit</a></li>
+            </ul>
+        </div>
+        <div class="content2">
+            <p>Made With <i class='bx bxs-heart'></i> By <span>KAVEENIC</span></p>
+        </div>
+        <div class="content3">
+            <a href=""><i class='bx bxl-instagram'></i></a>
+            <a href=""><i class='bx bxl-facebook' ></i></a>
+            <a href=""><i class='bx bxl-whatsapp' ></i></a>
+            <a href=""><i class='bx bxl-tiktok' ></i></a>
+        </div>
+    </footer> -->
+    <!-- BAGIAN FOOTER AKHIR -->
 	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -403,7 +459,7 @@
         });
 	</script>
 
-    <!-- BAGIAN SCRIPT SCRIPT -->
+    <!-- BAGIAN SCRIPT SLIDER -->
     <script>
         var swiper = new Swiper(".mySwiper", {
             effect: "cube",
@@ -418,6 +474,22 @@
                 el: ".swiper-pagination",
             },
         });
+    </script>
+
+    <!-- BAGIAN SCRIPT SWICTH -->
+    <script>
+        const amazing = document.querySelector('.amazing');
+        const payment = document.querySelector('.payment');
+        const socialsMedia = document.querySelector('.socialsMedia');
+        const social = document.querySelector('.social');
+        const socialSwitch = document.getElementById('socialSwitch');
+        socialSwitch.onclick = function(){
+            socialSwitch.classList.toggle('active');
+            social.classList.toggle('active');
+            socialsMedia.classList.toggle('active');
+            payment.classList.toggle('active');
+            amazing.classList.toggle('active');
+        }
     </script>
 </body>
 </html>
