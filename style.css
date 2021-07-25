@@ -957,6 +957,9 @@ nav ul li img{
 }
 
 /*--- BAGIAN IMAGE ---*/
+.seputar .order .card .card-inner .card-front img{
+	opacity: 1;
+}
 .seputar .order .card .card-inner .card-front img.money{
 	width: 185px;
 	position: absolute;
@@ -1018,6 +1021,9 @@ nav ul li img{
 }
 .seputar .order .card:hover .card-inner{
 	transform: rotateY(180deg);
+}
+.seputar .order .card .card-inner:hover .card-front img{
+	opacity: 0;
 }
 .seputar .order .card .card-inner:hover .card-front .bungkus{
 	visibility: hidden;
