@@ -414,6 +414,21 @@
                 </div>
             </div>
         </div>
+        <footer>
+            <ul id="cardList">
+                <li><a target="_blank" href='https://www.freepik.com/psd/woman'>Woman psd created by freepik - www.freepik.com</a></li>
+                <li><a target="_blank" href='https://www.freepik.com/psd/technology'>Technology psd created by freepik - www.freepik.com</a></li>
+                <li><a target="_blank" href='https://www.freepik.com/psd/gold'>Gold psd created by freepik - www.freepik.com</a></li>
+                <li><a target="_blank" href='https://www.freepik.com/psd/3d'>3d psd created by freepik - www.freepik.com</a></li>
+                <li><a target="_blank" href='https://www.freepik.com/psd/arrow'>Arrow psd created by freepik - www.freepik.com</a></li>
+                <li><a target="_blank" href='https://www.freepik.com/psd/money'>Money psd created by freepik - www.freepik.com</a></li>
+            </ul>
+            <p>We Used <span id="atribute"> Asset By Freepik</span> and Suported By</p>
+            <div class="muantap">
+                <img src="img/citi-bank-logo.png" alt="Citi Bank Logo" class="bl">
+                <img src="img/pji-logo-gradient.png" alt="PJI Logo">
+            </div>
+        </footer>
     </div>
     <!-- BAGIAN SOCIAL AKHIR -->
 	
@@ -467,6 +482,24 @@
             socialsMedia.classList.toggle('active');
             payment.classList.toggle('active');
             amazing.classList.toggle('active');
+        }
+    </script>
+
+    <!-- BAGIAN SCRIPT FOOTER -->
+    <script>
+        const atribute = document.getElementById('atribute');
+        const cardList = document.getElementById('cardList');
+
+        document.onclick = function(e){
+            if(e.target.id !== 'atribute' && e.target.id !== 'cardList'){
+                cardList.classList.remove('active');
+                atribute.classList.remove('active');
+            }
+        }
+
+        atribute.onclick = function(){
+            atribute.classList.toggle('active');
+            cardList.classList.toggle('active');
         }
     </script>
 </body>

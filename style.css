@@ -1410,7 +1410,7 @@ nav ul li img{
 		left: 150px;
 	}
 	.social{
-		padding: 150px 0px 50px;
+		padding: 150px 0px;
 	}
 	.social .socialsMedia,
 	.social .payment{
@@ -1444,54 +1444,77 @@ nav ul li img{
 }
 
 /*=== BAGIAN FOOTER ===*/
-footer{
+.social footer{
+	padding-bottom: 0px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
-	height: 50px;
-}
-footer ul{
-	display: flex;
-}
-footer ul li{
-	list-style: none;
-	font-weight: 800;
-	margin: 0px 10px;
-}
-footer ul li a{
-	color: black;
-}
-footer p{
-	font-weight: 800;
-}
-footer p i{
-	color: magenta;
-}
-footer p span{
-	font-family: "Azonix";
-}
-footer a{
-	text-decoration: none;
-}
-footer .content3{
-	display: flex;
-}
-footer .content3 a{
-	width: 30px;
-	height: 30px;
-	background: #8021c4;
-  	box-shadow: 0 6px #5f2787;
-  	display: flex;
-  	justify-content: center;
-  	align-items: center;
-  	margin: 0px 10px;
-}
-footer .content3 a:active{
-  	box-shadow: 0 3px #5f2787;
-  transform: translateY(4px);
-}
-footer .content3 i{
+	flex-direction: row;
+	height: 40px;
 	color: #fff;
+	font-weight: 800;
+	transition: 1s;
+	font-size: 1em;
+}
+.social footer ul#cardList.active{
+	opacity: 1;
+	visibility: visible;
+}
+.social footer ul{
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+.social footer ul#cardList{
+	padding: 10px;
+	position: absolute;
+	top: -200px;
+	background: rgba(255,255,255,0.2);
+	border-radius: 10px;
+	box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+	opacity: 0;
+	visibility: hidden;
+	transition: 1s;
+}
+.social footer ul li{
+	list-style: none;
+	transition: 1s;
+}
+.social footer ul li a{
+	color: #fff;
+	transition: 1s;
+	font-size: 0.8em;
+}
+.social footer p span{
+	cursor: pointer;
+	text-decoration: underline;
+	transition: 1s;
+}
+.social footer .muantap{
+	margin-left: 10px;
+	transform: translateY(-5px);
+}
+.social footer .muantap img.bl{
+	width: 45px;
+	margin-right: 10px;
+}
+.social footer .muantap img{
+	width: 100px;
+	-webkit-filter: drop-shadow(0px 0px 15px rgba(255,255,255,0.5));
+}
+@media screen and (max-width: 576px){
+	.social footer{
+		padding-bottom: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: auto;
+		font-size: 0.8em;
+	}
 }
 
 /*=== BAGIAN SCROLLBAR ===*/
