@@ -648,13 +648,13 @@ nav ul li img{
 	.launching .byunkusan{
 		padding: 70px 0px 20px 0px;
 	}
+	.launching .product .price{
+		right: -30px;
+	}
 }
 @media screen and (max-width: 576px){
 	.launching .byunkusan{
 		padding: 20px 0px;
-	}
-	.launching .product .price{
-		right: -10px;
 	}
 }
 
@@ -737,6 +737,9 @@ nav ul li img{
 }
 .seputar .halo .kotak .watt{
 	position: absolute;
+	/*--- STYLE GENERAL ---*/
+	top: -35px;
+	right: 0px;
 	/*--- STYLE BURHAN ---*/
 	/*bottom: -10px;
 	right: -35px;*/
@@ -744,8 +747,8 @@ nav ul li img{
 	/*right: 30px;
 	bottom: 50px;*/
 	/*--- STYLE MAMAH ---*/
-	right: -170px;
-	transform: rotate(-42deg) translateY(-50px);
+	/*right: -170px;
+	transform: rotate(-42deg) translateY(-50px);*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -782,9 +785,22 @@ nav ul li img{
 		bottom: 30px !important;
 	}
 }
+@media screen and (max-width: 767px){
+	.seputar .halo img.stage{
+		bottom: 0px;
+	}
+	.seputar .halo .bayangan{
+		width: 150px;
+		bottom: 0px !important;
+	}
+}
 @media screen and (max-width: 576px){
 	.seputar .halo img.stage{
 		bottom: 20px;
+	}
+	.seputar .halo .bayangan{
+		width: 150px;
+		bottom: 30px !important;
 	}
 }
 
@@ -799,16 +815,10 @@ nav ul li img{
 	.seputar .halo .kotak .text1{
 		right: 78px;
 	}
-	.seputar .halo .kotak .watt{
-		right: -160px;
-	}
 }
 @media screen and (max-width: 767px){
 	.seputar .halo .kotak{
-		transform: scale(0.6);
-	}
-	.seputar .halo .kotak .watt{
-		right: -120px;
+		transform: scale(0.5);
 	}
 }
 @media screen and (max-width: 576px){
@@ -820,9 +830,6 @@ nav ul li img{
 	}
 	.seputar .halo .kotak{
 		transform: scale(0.6);
-	}
-	.seputar .halo .kotak .watt{
-		right: -140px;
 	}
 }
 
@@ -957,7 +964,7 @@ nav ul li img{
 }
 @media screen and (max-width: 767px){
 	.seputar .carousel .carousel-inner .carousel-item h1{
-		font-size: 2.5em;
+		font-size: 2.3em;
 		text-transform: uppercase;
 	}
 	.seputar .carousel .carousel-inner .carousel-item p{
@@ -1179,10 +1186,24 @@ nav ul li img{
 	border-radius: 10px 10px 0px 0px;
 	color: #fff;
 	font-size: 0.8em;
+	visibility: visible;
+	opacity: 1;
+	transition: 1s;
 }
 .seputar .order .card .card-inner .card-front h4.wa{
 	right: 50px;
 }
+.seputar .order .card .card-inner:hover .card-front h4{
+	visibility: hidden;
+	opacity: 0;
+}
+/*--- RESPONSIVE ---*/
+@media screen and (max-width: 576px){
+	.seputar .order .card .card-inner .card-front h4.wa{
+		right: inherit;
+	}
+}
+
 .seputar .order .card:hover .card-inner{
 	transform: rotateY(180deg);
 }
