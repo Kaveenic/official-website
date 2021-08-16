@@ -1568,6 +1568,84 @@ nav ul li img{
 	}
 }
 
+/*--- BAGIAN DONATION ---*/
+.donation{
+	position: relative;
+	padding: 60px 0px 30px 0px;
+}
+.donation .container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.donation h1{
+	font-weight: 700;
+	color: #fff;
+	font-size: 3em;
+	text-shadow: 0px 10px 15px rgba(0,0,0,0.3);
+	text-align: center;
+}
+.donation h1 span{
+	color: #7ac941;
+}
+.donation a{
+	position: absolute;
+	z-index: 2;
+}
+.donation a img{
+	margin-top: 50px;
+	border-radius: 15px;
+	max-width: 260px;
+	-webkit-filter: drop-shadow(0px 0px 15px rgba(0,0,0,0.5));
+}
+.donation a img:hover{
+	max-width: 270px;
+	-webkit-filter: drop-shadow(0px 0px 25px rgba(0,0,0,0.5));
+}
+.donation .multiText{
+	opacity: 0.5;
+}
+.donation .multiText h2{
+	font-size: 3em;
+}
+.donation .multiText h2.ganjil{
+	-webkit-text-stroke: 1px #fff;
+	color: transparent;
+}
+.donation .multiText h2.genap{
+	color: #fff;
+}
+
+/*--- RESPONSIVE ---*/
+@media screen and (max-width: 768px){
+	.donation .multiText h2{
+		font-size: 3.5em;
+		line-height: 40px;
+	}
+	.donation .multiText h2 span{
+		display: none;
+	}
+	.donation a img{
+		max-width: 160px;
+	}
+	.donation a img:hover{
+		max-width: 170px;
+	}
+}
+@media screen and (max-width: 576px){
+	.donation .multiText h2{
+		font-size: 2em;
+	}
+	.donation a img{
+		margin-top: 100px;
+		max-width: 160px;
+	}
+	.donation a img:hover{
+		max-width: 170px;
+	}
+}
+
 /*=== BAGIAN FOOTER ===*/
 .social footer{
 	padding-bottom: 0px;
@@ -1584,6 +1662,7 @@ nav ul li img{
 	font-weight: 800;
 	transition: 1s;
 	font-size: 1em;
+	z-index: 999;
 }
 .social footer ul#cardList.active{
 	opacity: 1;
